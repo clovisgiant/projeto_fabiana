@@ -4,7 +4,7 @@ $username = "root";
 $password = "rayssa23";
 $dbname = "clovisdb";
 
-// Create connection
+// conectando mysql
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
