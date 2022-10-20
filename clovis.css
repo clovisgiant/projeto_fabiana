@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,300,500,700);
+* {
+  box-sizing: border-box;
+}
+
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart #one h2, body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart #two h2, body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart #three h2, body .charts_inner__options input[type=radio]#c-4:checked + label + .chart #four h2,
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart #one span,
+body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart #two span,
+body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart #three span,
+body .charts_inner__options input[type=radio]#c-4:checked + label + .chart #four span {
+  opacity: 1;
+  top: 0px;
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart #one i, body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart #two i, body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart #three i, body .charts_inner__options input[type=radio]#c-4:checked + label + .chart #four i {
+  opacity: 1;
+  left: 0px;
+  transition: all 0.2s 0.4s;
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart #one h2, body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart #two h2, body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart #three h2, body .charts_inner__options input[type=radio]#c-4:checked + label + .chart #four h2 {
+  transition: all 0.2s 0.5s;
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart #one span, body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart #two span, body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart #three span, body .charts_inner__options input[type=radio]#c-4:checked + label + .chart #four span {
+  transition: all 0.2s 0.6s;
+}
+
+body {
+  background: #6b2346;
+  font-family: "Fira Sans", sans-serif;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/gridz.png"), -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.9) 100%), linear-gradient(to bottom, #98336B 0%, #A0072E 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+body .charts_inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+body .charts_inner h1 {
+  color: white;
+  font-weight: 100;
+}
+body .charts_inner h2 {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  margin: -10px 0px 60px 0px;
+  color: #d04760;
+}
+body .charts_inner__options {
+  margin: 0 auto;
+  width: 740px;
+  text-align: center;
+}
+body .charts_inner__options input[type=radio] {
+  display: none;
+}
+body .charts_inner__options label {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 0px -1px 0px 0px #90285D inset, 0px -2px 0px 0px rgba(255, 255, 255, 0.14) inset;
+  transition: all 0.2s, box-shadow 0.01s;
+  cursor: pointer;
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #CD455E 0%, #8C275D 100%);
+  color: white;
+  font-weight: 200;
+  padding: 14px 30px;
+  font-size: 14px;
+  margin: 0 -4px;
+}
+body .charts_inner__options label:nth-of-type(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+body .charts_inner__options label:nth-of-type(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+body .charts_inner__options label i {
+  margin-right: 10px;
+  transition: all 0.2s;
+  position: relative;
+  top: 0px;
+  transform: scale(1);
+}
+body .charts_inner__options label:hover {
+  color: white;
+  transition: all 0.2s, box-shadow 0.1s;
+  background-image: linear-gradient(to bottom, #91295D 0%, #751B44 100%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+  z-index: -1;
+}
+body .charts_inner__options input[type=radio]:checked + label {
+  color: white;
+  transition: all 0.2s, box-shadow 0.1s;
+  background-image: linear-gradient(to bottom, #91295D 0%, #751B44 100%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+  z-index: -1;
+  z-index: -1;
+}
+body .charts_inner__options input[type=radio]:checked + label i {
+  transform: scale(1.2);
+  color: #EF376C;
+}
+body .charts_inner__options input[type=radio]#c-4:checked + label + .chart .c-1 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-4:checked + label + .chart .c-2 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-4:checked + label + .chart .c-3 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-4:checked + label + .chart .c-4 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart .c-1 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.75);
+}
+body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart .c-2 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart .c-3 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(1);
+}
+body .charts_inner__options input[type=radio]#c-3:checked + label + input + label + .chart .c-4 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart .c-1 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart .c-2 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.2);
+}
+body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart .c-3 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.25);
+}
+body .charts_inner__options input[type=radio]#c-2:checked + label + input + label + input + label + .chart .c-4 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.2);
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart .c-1 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.75);
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart .c-2 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.3333333333);
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart .c-3 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.5);
+}
+body .charts_inner__options input[type=radio]#c-1:checked + label + input + label + input + label + input + label + .chart .c-4 .cube .cube_inner {
+  transform: rotate(180deg) scaleY(0.6666666667);
+}
+body .charts_inner__options .chart {
+  clear: both;
+  padding: 60px 0px 120px 0px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  overflow: hidden;
+  position: relative;
+}
+body .charts_inner__options .chart .stat_block {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+}
+body .charts_inner__options .chart .cube_details {
+  position: relative;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 180px;
+  float: left;
+  text-align: center;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+}
+body .charts_inner__options .chart .cube_details h2 {
+  color: #d04760;
+  font-weight: 100;
+  font-size: 13px;
+  text-align: left;
+  margin: 0;
+  position: relative;
+  top: 4px;
+  opacity: 0;
+  transition: all 0.2s 0.1s;
+}
+body .charts_inner__options .chart .cube_details span {
+  position: relative;
+  top: 4px;
+  opacity: 0;
+  transition: all 0.2s 0.2s;
+}
+body .charts_inner__options .chart .cube_details__icon {
+  float: left;
+  font-size: 32px;
+  margin-right: 14px;
+  margin-left: 18px;
+}
+body .charts_inner__options .chart .cube_details__icon i {
+  position: relative;
+  transition: all 0.2s 0.1s;
+  left: -4px;
+  opacity: 0;
+  top: 4px;
+}
+body .charts_inner__options .chart .cube_details__stat {
+  float: left;
+}
+body .charts_inner__options .chart_item {
+  width: 180px;
+  padding: 30px;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+body .charts_inner__options .chart_item .cube_inner {
+  width: 100px;
+  transition: all 0.45s cubic-bezier(0.36, 1.64, 0.29, 0.88);
+  transform-style: preserve-3d;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+}
+body .charts_inner__options .chart_item .cube_inner div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  transform-origin: 50% 50%;
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_front {
+  transform: translateZ(50px);
+  background-image: linear-gradient(to bottom, #dcedff 0%, rgba(29, 88, 136, 0) 100%);
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_back {
+  transform: translateZ(-50px);
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_left {
+  transform: rotateY(90deg) translateZ(-50px);
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #c4d7ea 0%, rgba(29, 88, 136, 0) 100%);
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_right {
+  transform: rotateY(90deg) translateZ(50px);
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #c4d7ea 0%, rgba(29, 88, 136, 0) 100%);
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_top {
+  transform: rotateX(90deg) translateZ(50px);
+  background-color: whitesmoke;
+  background-image: linear-gradient(to bottom, #dcedff 0%, rgba(29, 88, 136, 0) 100%);
+}
+body .charts_inner__options .chart_item .cube_inner div.cube_bottom {
+  transform: rotateX(90deg) translateZ(-50px);
+  background-color: whitesmoke;
+  background-image: linear-gradient(to bottom, #dcedff 0%, rgba(29, 88, 136, 0) 100%);
+}
+body .charts_inner__options .chart_item .cube div.cube_shadow {
+  background-color: rgba(0, 0, 0, 0.36);
+  position: absolute;
+  box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.36);
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40px;
+  z-index: -1;
+}
